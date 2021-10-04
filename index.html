@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<div id="main">
+	<main id="main">
 		<h1>TIC TAC TOE</h1>
 
 		<p id="ins">
@@ -18,39 +18,38 @@
             | 'X' ~ PLAYER I | 'O' ~ PLAYER II |
 		</p>
 
-		<br><br>
+		<div id="grid">
 		<!-- 3*3 grid of Boxes -->
-		<input type="text" id="block1" onclick=
-			"myfunc_3(); myfunc();" readonly>
+			<input type="text" id="block1" class="block" onclick=
+				"myfunc_3(); myfunc();" readonly>
 
-		<input type="text" id="block2" onclick=
-			"myfunc_4(); myfunc();" readonly>
+			<input type="text" id="block2" class="block" onclick=
+				"myfunc_4(); myfunc();" readonly>
 
-		<input type="text" id="block3" onclick=
-			"myfunc_5(); myfunc();" readonly>
-		<br><br>
+			<input type="text" id="block3" class="block" onclick=
+				"myfunc_5(); myfunc();" readonly>
 
-		<input type="text" id="block4" onclick=
-			"myfunc_6(); myfunc();" readonly>
-			
-		<input type="text" id="block5" onclick=
-			"myfunc_7(); myfunc();" readonly>
+			<input type="text" id="block4" class="block" onclick=
+				"myfunc_6(); myfunc();" readonly>
+				
+			<input type="text" id="block5" class="block" onclick=
+				"myfunc_7(); myfunc();" readonly>
 
-		<input type="text" id="block6" onclick=
-			"myfunc_8(); myfunc();" readonly>
-		<br><br>
+			<input type="text" id="block6" class="block" onclick=
+				"myfunc_8(); myfunc();" readonly>
 
-		<input type="text" id="block7" onclick=
-			"myfunc_9(); myfunc();" readonly>
+			<input type="text" id="block7" class="block" onclick=
+				"myfunc_9(); myfunc();" readonly>
 
-		<input type="text" id="block8" onclick=
-			"myfunc_10();myfunc();" readonly>
+			<input type="text" id="block8" class="block" onclick=
+				"myfunc_10();myfunc();" readonly>
 
-		<input type="text" id="block9" onclick=
-			"myfunc_11();myfunc();" readonly>
+			<input type="text" id="block9" class="block" onclick=
+				"myfunc_11();myfunc();" readonly>
+		</div>
 
 		<!-- Grid end here -->
-		<br><br><br>
+		
 		<!-- Button to reset game -->
 		<button id="button" onclick="myfunc_2()">
 			RESET
@@ -60,7 +59,7 @@
 		<!-- Space to show player turn -->
 		<p id="print"></p>
 
-	</div>
+	</main> <!-- main end -->
 </body>
 
 </html>
